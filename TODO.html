@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>to-do list</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <i class="fa-regular fa-calendar-days" style="color: #ffffff;" id="logo"></i>
+      <h1>To Do</h1>
+      <input type="text" placeholder="search" id="search">
+      <i class="fa-solid fa-magnifying-glass" style="color: #000000;" id="searchIcon"></i>
+      <div class="simbos">
+        <i class="fa-solid fa-gear" style="color: #ffffff;" id="sating"></i>
+        <i class="fa-regular fa-question" style="color: #ffffff;" id="questionmark"></i>
+        <i class="fa-regular fa-bell" style="color: #ffffff;" id="notifikation"></i>
+        <i class="fa-solid fa-user-large" style="color: #ffffff;" id="login"></i>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="side-manu">
+      <div class="top-manu">
+        <i class="fa-solid fa-bars" id="ham-berger"></i>
+        <i class="fa-solid fa-sun" style="color: #404040;" id="sun"></i>
+        <i class="fa-solid fa-star" style="color: #404040;" id="star"></i>
+        <i class="fa-regular fa-calendar-days" style="color: #404040;" id="calander"></i>
+        <i class="fa-solid fa-user-large" style="color: #404040;" id="login2"></i>
+        <i class="fa-solid fa-house" style="color: #404040;" id="home"></i>
+
+        <i class="fa-solid fa-plus" style="color: #69a7ff;" id="pluse"></i>
+
+      </div>
+
+
+      <ul id="sideUl">
+        <li style="visibility: hidden;">menu</li>
+        <li id="mayday">My Day</li>
+        <li id="important">Important</li>
+        <li id="plenned">Planned</li>
+        <li id="assigned">Assigned</li>
+        <li id="tasks">Tasks</li>
+
+
+        <li class="newpage">New Page</li>
+
+      </ul>
+      <i class="fa-solid fa-xmark" id="close" style="color: #404040;"></i>
+    </div>
+
+
+    <section class="main-list">
+
+      <div class="heading">
+        <div class="date">
+          <h1 id="allh1">My Day...</h1>
+          <span style="color: rgb(92, 92, 92);" id="sam">sunday/9/10/2023</span>
+        </div>
+
+        <div class="smallMenu">
+          <h6 id="classcomplitLists" style="cursor: pointer;">+ completed</h6>
+          <h6 style="cursor: pointer;">subsection</h6>
+        </div>
+      </div>
+
+      <section class="desplay">
+        <form class="tasks">
+          <input type="text" name="text" id="task-inpt" placeholder=" + add">
+          <input type="submit" value="submit" id="sub">
+
+        </form>
+
+        <ul class="TaskList">
+
+        </ul>
+
+      </section>
+
+    </section>
+
+    <section class="complete-task">
+      <div class="coplitNav">
+        <i class="fa-solid fa-xmark" style="color: #404040;" id="complist-close"></i>
+        <h5 id="clear">clear all</h5>
+      </div>
+      <div class="tc-list">
+      </div>
+    </section>
+
+
+    <div class="mane-planned">
+      <div class="planned-headding">
+        <h1>Planned..</h1>
+        <span style="color: rgb(92, 92, 92);">sunday/9/10/2023</span>
+      </div>
+      <div class="planned-inpts">
+        <input type="text" name="text" id="planne-tital" placeholder="+ Enter Title">
+        <input type="text" name="text" id="planne-Discription" placeholder="+ Enter Discription">
+        <input type="text" name="text" id="planne-Time" placeholder="+ Enter Timeing">
+        <input type="submit" value="Add" id="planne-btn">
+      </div>
+      <div class="planListCntenar"></div>
+    </div>
+  </main>
+<!-- 
+  <div class="greating-page">
+
+    <div class="overley"></div>
+
+    <div class="greating-nav">
+      <h2>TO DO</h2>
+      <ul>
+        <li>Make a to-do</li>
+        <li>Get Started</li>
+      </ul>
+
+      <div class="right-grit">
+        <h6>signIn</h6>
+        <i class="fa-solid fa-user-plus" style="color: #ffffff;"></i>
+      </div>
+    </div>
+    <h1>Welcome <span>to My to-do</span></h1>
+    <button id="stertBtn">Get Started</button>
+
+
+ -->
+
+    <!-- <form action="input" id="inptForm">
+      <div class="loginHed">
+        <h2>Log in</h2>
+        <i class="fa-solid fa-xmark" style="color: #404040;" id="login-close"></i>
+      </div>
+      <h6 class="hsix" id="emailChuck">Enter email or phone</h6>
+      <input type="text" name="text" class="loginInput" id="loginpt1" placeholder="Enter email or phone">
+
+      <h6 class="hsix" id="passChuck">Enter your password</h6>
+      <input type="password" name="text" class="loginInput" id="loginpt2" placeholder="password">
+
+      <button class="loginBtn">signIn</button>
+    </form> -->
+
+  </div>
+
+
+
+
+
+  <script src="app.js"></script>
+  <script src="https://kit.fontawesome.com/84cca0c0ef.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

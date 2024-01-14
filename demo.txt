@@ -1,0 +1,24 @@
+const aadBtn = document.getElementById("addbtn");
+const addTaskInpt = document.getElementById("addtask");
+const uList = document.querySelector("#addHear");
+
+const store = [];
+
+aadBtn.addEventListener("click", function(e){
+    e.preventDefault()
+    addingValue();
+    addTaskInpt.value = "";
+})
+
+function addingValue(){
+    store.push(addTaskInpt.value);
+
+    store.filter((item)=>{
+       let list = document.createElement("li")
+       uList.appendChild(list);
+    })
+    console.log(store);
+
+   
+
+}
